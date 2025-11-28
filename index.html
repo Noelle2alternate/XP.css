@@ -18,28 +18,28 @@
 <body class="surface" ontouchstart="">
   <aside>
     <ul class="tree-view">
-      <li><a href="#intro">Intro</a></li>
+      <li><a href="#intro">介绍</a></li>
       <li>
-        <a href="#components">Components</a>
+        <a href="#components">组件</a>
         <ul>
-          <li><a href="#button">Button</a></li>
-          <li><a href="#checkbox">Checkbox</a></li>
-          <li><a href="#option-button">OptionButton</a></li>
-          <li><a href="#tabs">Tabs</a></li>
-          <li><a href="#group-box">GroupBox</a></li>
-          <li><a href="#text-box">TextBox</a></li>
-          <li><a href="#slider">Slider</a></li>
-          <li><a href="#dropdown">Dropdown</a></li>
+          <li><a href="#button">按钮</a></li>
+          <li><a href="#checkbox">复选框</a></li>
+          <li><a href="#option-button">单选选项</a></li>
+          <li><a href="#tabs">选项卡</a></li>
+          <li><a href="#group-box">分组框</a></li>
+          <li><a href="#text-box">文本框</a></li>
+          <li><a href="#slider">滑块控件</a></li>
+          <li><a href="#dropdown">下拉列表框</a></li>
           <li>
-            <a href="#window">Window</a>
+            <a href="#window">窗口</a>
             <ul>
-              <li><a href="#title-bar">Title Bar</a></li>
-              <li><a href="#window-contents">Window contents</a></li>
-              <li><a href="#status-bar">Status Bar</a></li>
+              <li><a href="#title-bar">标题栏</a></li>
+              <li><a href="#window-contents">窗口内容</a></li>
+              <li><a href="#status-bar">状态栏</a></li>
             </ul>
           </li>
-          <li><a href="#tree-view">TreeView</a></li>
-          <li><a href="#progress-bar">ProgressBar</a></li>
+          <li><a href="#tree-view">树视图控件</a></li>
+          <li><a href="#progress-bar">进度条</a></li>
         </ul>
       </li>
       <li><a href="#issues-contributing-etc">Issues, Contributing, etc.</a></li>
@@ -51,7 +51,7 @@
     <hr>
     <p>复刻经典 UI 的 CSS 的简体中文化。</p>
 
-    <h2 id="intro">Intro</h2>
+    <h2 id="intro">介绍</h2>
     <p>
       本 CSS 为 botoxparty 的 XP.css 的简体中文化版本。本 CSS 库可以使你的网页拥有 Windows XP Luna 风格的外观。<br>
       参见：<a href="https://github.com/Noelle2alternate/XP.css">XP.css 的简体中文化版本</a><br>
@@ -99,10 +99,10 @@
 &gt;</code></pre>
     <p></p>
 
-    <h2 id="components">Components</h2>
+    <h2 id="components">组件</h2>
 
     <section class="component">
-      <h3 id="button">Button</h3>
+      <h3 id="button">按钮</h3>
       <div>
         <blockquote>
           <strong>命令按钮</strong>，亦称按下式按钮，是一种控件，用户点击时应用程序将执行相应操作。
@@ -162,7 +162,7 @@
     </section>
 
     <section class="component">
-      <h3 id="checkbox">Checkbox</h3>
+      <h3 id="checkbox">复选框</h3>
       <div>
         <blockquote>
           A <em>check box</em> represents an independent or non-exclusive choice.
@@ -170,7 +170,7 @@
         </blockquote>
 
         <p>
-          Checkboxes are represented with a sunken panel, populated with a "check" icon when
+          复选框es are represented with a sunken panel, populated with a "check" icon when
           selected, next to a label indicating the choice.
         </p>
 
@@ -193,7 +193,7 @@
     </div>
 
         <p>
-          Checkboxes can be selected and disabled with the standard <code>checked</code> and <code>disabled</code>
+          复选框es can be selected and disabled with the standard <code>checked</code> and <code>disabled</code>
           attributes.
         </p>
 
@@ -235,7 +235,7 @@
     </section>
 
     <section class="component">
-      <h3 id="option-button">OptionButton</h3>
+      <h3 id="option-button">单选选项</h3>
       <div>
         <blockquote>
           An <em>option button</em>, also referred to as a radio button, represents a single
@@ -315,16 +315,16 @@
     </section>
 
     <section class="component">
-      <h3 id="tabs">Tabs</h3>
+      <h3 id="tabs">选项卡</h3>
       <div>
         <blockquote>
-          <em>Tabs</em> provide a way to present related information on separate labeled pages.
+          <em>选项卡</em> provide a way to present related information on separate labeled pages.
           <footer>— <a href="https://docs.microsoft.com/en-us/windows/win32/uxguide/ctrl-tabs">Microsoft Windows
-              User Experience - Tabs</a></footer>
+              User Experience - 选项卡</a></footer>
         </blockquote>
         <div class="example">
       <section class="tabs" style="max-width: 500px">
-  <menu role="tablist" aria-label="Sample Tabs">
+  <menu role="tablist" aria-label="Sample 选项卡">
     <button role="tab" aria-selected="true" aria-controls="tab-A">Tab A</button>
     <button role="tab" aria-controls="tab-B">Tab B</button>
     <button role="tab" aria-controls="tab-C">Tab C</button>
@@ -341,7 +341,7 @@
   </article>
   <article role="tabpanel" hidden="" id="tab-B">
     <h3>More...</h3>
-    <p>This tab contains a GroupBox</p>
+    <p>This tab contains a 分组框</p>
     <fieldset>
       <legend>Today's mood</legend>
       <div class="field-row">
@@ -370,7 +370,7 @@
       <details>
         <summary>Show code</summary>
         <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tabs"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"max-width: 500px"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">menu</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Sample Tabs"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">menu</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Sample 选项卡"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"tab-A"</span>&gt;</span>Tab A<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"tab-B"</span>&gt;</span>Tab B<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"tab-C"</span>&gt;</span>Tab C<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -387,7 +387,7 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">hidden</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab-B"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>More...<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This tab contains a GroupBox<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This tab contains a 分组框<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Today's mood<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"field-row"</span>&gt;</span>
@@ -419,7 +419,7 @@
     </section>
 
     <section class="component">
-      <h3 id="group-box">GroupBox</h3>
+      <h3 id="group-box">分组框</h3>
       <div>
         <blockquote>
           A <em>group box</em> is a special control you can use to organize a set of
@@ -523,7 +523,7 @@
     </section>
 
     <section class="component">
-      <h3 id="text-box">TextBox</h3>
+      <h3 id="text-box">文本框</h3>
       <div>
         <blockquote>
           A <em>text box</em> (also referred to as an edit control) is a
@@ -603,7 +603,7 @@
     </section>
 
     <section class="component">
-      <h3 id="slider">Slider</h3>
+      <h3 id="slider">滑块控件</h3>
       <div>
         <blockquote>
           A <em>slider</em>, sometimes called a trackbar control, consists of a bar that
@@ -614,7 +614,7 @@
         </blockquote>
 
         <p>
-          Sliders can rendered by specifying a <code>range</code> type on an
+          滑块控件s can rendered by specifying a <code>range</code> type on an
           <code>input</code> element.
         </p>
 
@@ -668,7 +668,7 @@
     </section>
 
     <section class="component">
-      <h3 id="dropdown">Dropdown</h3>
+      <h3 id="dropdown">下拉列表框</h3>
       <div>
         <blockquote>
           A <em>drop-down list box</em> allows the selection of only a
@@ -682,7 +682,7 @@
         </blockquote>
 
         <p>
-          Dropdowns can be rendered by using the <code>select</code> and <code>option</code>
+          下拉列表框s can be rendered by using the <code>select</code> and <code>option</code>
           elements.
         </p>
 
@@ -734,14 +734,14 @@
       </div>
     </section>
 
-    <h3 id="window">Window</h3>
+    <h3 id="window">窗口</h3>
     <p>
       The following components illustrate how to build complete windows using
       98.css.
     </p>
 
     <section class="component">
-      <h4 id="title-bar">Title Bar</h4>
+      <h4 id="title-bar">标题栏</h4>
       <div>
         <blockquote>
           At the top edge of the window, inside its border, is the title bar
@@ -771,7 +771,7 @@
 
         <div class="example">
       <div class="title-bar">
-  <div class="title-bar-text">A Title Bar</div>
+  <div class="title-bar-text">A 标题栏</div>
   <div class="title-bar-controls">
     <button aria-label="Close"></button>
   </div>
@@ -779,7 +779,7 @@
       <details>
         <summary>Show code</summary>
         <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A Title Bar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A 标题栏<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-controls"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -795,7 +795,7 @@
 
         <div class="example">
       <div class="title-bar">
-  <div class="title-bar-text">A Title Bar</div>
+  <div class="title-bar-text">A 标题栏</div>
   <div class="title-bar-controls">
     <button aria-label="Minimize"></button>
     <button aria-label="Restore"></button>
@@ -815,7 +815,7 @@
       <details>
         <summary>Show code</summary>
         <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A Title Bar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A 标题栏<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-controls"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Minimize"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Restore"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -838,7 +838,7 @@
     </section>
 
     <section class="component">
-      <h4 id="window-contents">Window contents</h4>
+      <h4 id="window-contents">窗口内容</h4>
       <div>
         <blockquote>
           Every window has a boundary that defines its shape.
@@ -858,7 +858,7 @@
         <div class="example">
       <div class="window" style="width: 300px">
   <div class="title-bar">
-    <div class="title-bar-text">A Complete Window</div>
+    <div class="title-bar-text">A Complete 窗口</div>
     <div class="title-bar-controls">
       <button aria-label="Minimize"></button>
       <button aria-label="Maximize"></button>
@@ -870,7 +870,7 @@
         <summary>Show code</summary>
         <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"window"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 300px"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A Complete Window<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A Complete 窗口<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-controls"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Minimize"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Maximize"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -889,7 +889,7 @@
         <div class="example">
       <div class="window" style="width: 300px">
   <div class="title-bar">
-    <div class="title-bar-text">A Window With Stuff In It</div>
+    <div class="title-bar-text">A 窗口 With Stuff In It</div>
     <div class="title-bar-controls">
       <button aria-label="Minimize"></button>
       <button aria-label="Maximize"></button>
@@ -904,7 +904,7 @@
         <summary>Show code</summary>
         <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"window"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 300px"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A Window With Stuff In It<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A 窗口 With Stuff In It<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-controls"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Minimize"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Maximize"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -959,7 +959,7 @@
         <div class="example">
       <div class="window" style="width: 400px">
   <div class="title-bar">
-    <div class="title-bar-text">A Window With Tabs and Groups</div>
+    <div class="title-bar-text">A 窗口 With 选项卡 and Groups</div>
     <div class="title-bar-controls">
       <button aria-label="Minimize"></button>
       <button aria-label="Maximize"></button>
@@ -1019,7 +1019,7 @@
         <summary>Show code</summary>
         <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"window"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 400px"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A Window With Tabs and Groups<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A 窗口 With 选项卡 and Groups<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-controls"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Minimize"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Maximize"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -1081,7 +1081,7 @@
     </section>
 
     <section class="component">
-      <h4 id="status-bar">Status Bar</h4>
+      <h4 id="status-bar">状态栏</h4>
       <div>
         <blockquote>
           A status bar is a special area within a window, typically the bottom, that displays information
@@ -1101,7 +1101,7 @@
         <div class="example">
       <div class="window" style="width: 320px">
   <div class="title-bar">
-    <div class="title-bar-text">A Window With A Status Bar</div>
+    <div class="title-bar-text">A 窗口 With A 状态栏</div>
   </div>
   <div class="window-body">
 <p> There are just so many possibilities:</p>
@@ -1121,7 +1121,7 @@
         <summary>Show code</summary>
         <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"window"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 320px"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A Window With A Status Bar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title-bar-text"</span>&gt;</span>A 窗口 With A 状态栏<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"window-body"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> There are just so many possibilities:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -1144,7 +1144,7 @@
     </div></section>
 
     <section class="component">
-      <h3 id="tree-view">TreeView</h3>
+      <h3 id="tree-view">树视图控件</h3>
       <div>
         <blockquote>
           A <em>tree view control</em> is a special list box control
@@ -1283,7 +1283,7 @@
     </section>
 
     <section class="component">
-      <h3 id="progress-bar">ProgressBar</h3>
+      <h3 id="progress-bar">进度条</h3>
       <div>
         <blockquote>
           With a <em>progress bar</em>, users can follow the progress
