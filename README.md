@@ -14,7 +14,7 @@ XP.css 是一个 CSS 文件，能够将语义化的 HTML 呈现得美观大方�
   <head>
     <title>XP.css 示例</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://noelle2alternate/XP.css/xp.css" />
+    <link rel="stylesheet" href="https://noelle2alternate.github.io/XP.css/xp.css" />
   </head>
 
   <body>
