@@ -1157,72 +1157,67 @@
         </blockquote>
 
         <p>
-          To render a tree view, use an <code>ul</code> element with the
-          <code>tree-view</code> class. The children of this list (<code>li</code>
-          elements), can contain whatever you'd like.
+          要呈现树形视图，请使用带有 <code>tree-view</code> 类的 <code>ul</code> 元素。该列表的子元素（<code>li</code> 元素）可包含任意内容。
         </p>
 
         <div class="example">
       <ul class="tree-view">
-  <li>We can put</li>
-  <li><strong style="color: purple">✨ Whatever ✨</strong></li>
-  <li>We want in here</li>
+  <li>我们可以把</li>
+  <li><strong style="color: purple">✨什么东西✨</strong></li>
+  <li>都放进来</li>
 </ul>
       <details>
         <summary>显示代码</summary>
         <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tree-view"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>We can put<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: purple"</span>&gt;</span>✨ Whatever ✨<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>We want in here<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>我们可以把<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: purple"</span>&gt;</span>✨什么东西✨<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>都放进来<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
       </details>
     </div>
 
         <p>
-          To make this a tree, we can nest further <code>ul</code> elements
-          (no class needed on these). This will provide them with a nice dotted
-          border and indentation to illustrate the structure of the tree.
+          要构建树形结构，可以嵌套更多 <code>ul</code> 元素（无需添加类名）。这样会为它们提供漂亮的虚线边框和缩进效果，从而清晰展现树的层级关系。
         </p>
         <p>
-          To create expandable sections, wrap child lists inside of
-          <code>details</code> elements.
+          要创建可展开的区域，请将子列表包裹在 <code>details</code> 元素中。
         </p>
 
         <div class="example">
       <ul class="tree-view">
-  <li>Table of Contents</li>
-  <li>What is web development?</li>
+  <li>目录</li>
+  <li>什么是网页开发？</li>
   <li>
     CSS
     <ul>
-      <li>Selectors</li>
-      <li>Specificity</li>
-      <li>Properties</li>
+      <li>选择器</li>
+      <li>特异性</li>
+      <li>属性</li>
     </ul>
   </li>
   <li>
     <details open="">
       <summary>JavaScript</summary>
       <ul>
-        <li>Avoid at all costs</li>
+        <li>避免付出一切代价</li>
         <li>
           <details>
-            <summary>Unless</summary>
+            <summary>除非很重要，否则</summary>
             <ul>
-              <li>Avoid</li>
+              <li>避免</li>
               <li>
                 <details>
-                  <summary>At</summary>
+                  <summary>付出</summary>
                   <ul>
-                    <li>Avoid</li>
-                    <li>At</li>
-                    <li>All</li>
-                    <li>Cost</li>
+                    <li>避免</li>
+                    <li>付出</li>
+                    <li>一切</li>
+                    <li>代价</li>
                   </ul>
                 </details>
               </li>
-              <li>All</li>
-              <li>Cost</li>
+              <li>一切</li>
+              <li>代价</li>
             </ul>
           </details>
         </li>
@@ -1235,39 +1230,39 @@
       <details>
         <summary>显示代码</summary>
         <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tree-view"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Table of Contents<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>What is web development?<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>目录<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>什么是网页开发？<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
     CSS
     <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Selectors<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Specificity<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Properties<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>选择器<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>特异性<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>属性<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">details</span> <span class="hljs-attr">open</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Avoid at all costs<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>避免付出代价<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Unless<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>除非很重要，否则<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Avoid<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>避免<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>At<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>付出<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
                   <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Avoid<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>At<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>All<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Cost<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>避免<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>付出<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>一切<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>代价<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>All<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Cost<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>一切<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>代价<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
