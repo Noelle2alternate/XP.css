@@ -1,9 +1,10 @@
 /*! 基于 botoxparty 的XP.css v0.2.6 - https://botoxparty.github.io/XP.css/ */
 
 @import url("https://fontsapi.zeoseven.com/843/main/result.css");
+@import url("https://fontsapi.zeoseven.com/25/main/result.css");
 
 body {
-    font-family: SimSun;
+    font-family: SimSun, "WenQuanYi Micro Hei";
     font-size: 12px;
     color: #222
 }
@@ -55,7 +56,7 @@ pre {
 }
 
 pre,pre * {
-    font-family: NanoDyongWongSong
+    font-family: NanoDyongWongSong;
 }
 
 summary:focus {
@@ -126,7 +127,7 @@ label {
 }
 
 input,label,textarea {
-    font-family: SimSun;
+    font-family: SimSun, "WenQuanYi Micro Hei";
     font-size: 11px
 }
 
@@ -146,7 +147,7 @@ textarea:focus {
 }
 
 select {
-    font-family: SimSun;
+    font-family: SimSun, "WenQuanYi Micro Hei";
     font-size: 11px;
     border: none;
     background-color: #fff;
@@ -179,7 +180,7 @@ select:active {
 }
 
 option {
-    font-family: SimSun;
+    font-family: SimSun, "WenQuanYi Micro Hei";
     font-size: 11px
 }
 
@@ -452,7 +453,7 @@ input[type=range].has-box-indicator::-moz-range-thumb {
 }
 
 ul.tree-view {
-    font-family: SimSun;
+    font-family: SimSun, "WenQuanYi Micro Hei";
     font-size: 11px;
     display: block;
     background: #fff;
@@ -660,7 +661,7 @@ menu[role=tablist].justified button {
 }
 
 .title-bar {
-    font-family: SimSun;
+    font-family: SimSun, "WenQuanYi Micro Hei";
     background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
     padding: 3px 5px 3px 3px;
     border-top: 1px solid #0831d9;
@@ -765,7 +766,7 @@ menu[role=tablist].justified button {
 }
 
 .status-bar-field {
-    font-family: SimSun;
+    font-family: SimSun, "WenQuanYi Micro Hei";
     -webkit-font-smoothing: antialiased;
     box-shadow: none;
     padding: 1px 2px;
@@ -782,7 +783,7 @@ menu[role=tablist].justified button {
 }
 
 button {
-    font-family: SimSun;
+    font-family: SimSun, "WenQuanYi Micro Hei";
     -webkit-font-smoothing: antialiased;
     font-size: 11px;
     box-sizing: border-box;
